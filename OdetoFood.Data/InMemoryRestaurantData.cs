@@ -19,6 +19,13 @@ namespace OdetoFood.Data
       };
     }
 
+    public Restaurant Add(Restaurant newRestaurant)
+    {
+      restaurants.Add(newRestaurant);
+      newRestaurant.Id = restaurants.Max(r => r.Id) + 1; // Only for testing
+      return newRestaurant;
+    }
+
     public int Commit()
     {
       return 0;
