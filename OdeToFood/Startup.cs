@@ -31,8 +31,11 @@ namespace OdeToFood
       });
 
       // LOCAL - This is only used for a test environment; not in production
-      services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
-      
+      //services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+
+      // SQL Server
+      services.AddScoped<IRestaurantData, SqlRestaurantData>();
+
       services.AddRazorPages();
     }
 

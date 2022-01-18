@@ -14,7 +14,7 @@ namespace OdetoFood.Data
       restaurants = new List<Restaurant>()
       {
         new Restaurant() {Id = 1, Name = "Ant's Pizza", Location = "Forida", Cuisine = CuisineType.Mexican},
-        new Restaurant() { Id = 2, Name = "Trina's Club", Location = "Philadelphia", Cuisine = CuisineType.italian },
+        new Restaurant() { Id = 2, Name = "Trina's Club", Location = "Philadelphia", Cuisine = CuisineType.Italian },
         new Restaurant() { Id = 3, Name = "La Costa", Location = "New Jersey", Cuisine = CuisineType.Indian }
       };
     }
