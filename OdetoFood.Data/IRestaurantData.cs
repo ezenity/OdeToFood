@@ -12,6 +12,7 @@ namespace OdetoFood.Data
     Restaurant GetById(int id);
     Restaurant Update(Restaurant restaurant);
     Restaurant Add(Restaurant newRestaurant);
+    Restaurant Delete(int id);
     int Commit();
   }
 

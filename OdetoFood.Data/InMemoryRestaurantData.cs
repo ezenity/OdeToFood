@@ -31,6 +31,18 @@ namespace OdetoFood.Data
       return 0;
     }
 
+    public Restaurant Delete(int id)
+    {
+      var restaurant = restaurants.FirstOrDefault(r => r.Id == id);
+
+      if (restaurant != null)
+      {
+        restaurants.Remove(restaurant);
+      }
+
+      return restaurant;
+    }
+
     public Restaurant GetById(int id)
     {
       return restaurants.SingleOrDefault(r => r.Id == id);
