@@ -19,6 +19,11 @@ namespace OdetoFood.Data
       };
     }
 
+    public Restaurant GetById(int id)
+    {
+      return restaurants.SingleOrDefault(r => r.Id == id);
+    }
+
     public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
     {
       return from r in restaurants 
@@ -26,6 +31,8 @@ namespace OdetoFood.Data
              orderby r.Name
              select r;
     }
+
+
   }
 
 }
