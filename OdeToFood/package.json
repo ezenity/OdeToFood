@@ -1,0 +1,12 @@
+{
+  "name": "odetofood",
+  "version": "1.0.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "datatables.net": "^1.11.3",
+    "datatables.net-bs4": "^1.11.3",
+    "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.3",
+    "jquery-validation-unobtrusive": "^3.2.12"
+  }
+}
