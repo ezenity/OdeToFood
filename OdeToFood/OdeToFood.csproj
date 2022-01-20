@@ -4,6 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="computeFilesToPublish">
+    <Exec Command="npm install" />
+  </Target>
+
+  <ItemGroup>
+    <Content Include="node_modules/**" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
   <ItemGroup>
     <TypeScriptCompile Remove="node_modules\**" />
   </ItemGroup>
