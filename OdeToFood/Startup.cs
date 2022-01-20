@@ -37,6 +37,14 @@ namespace OdeToFood
       // SQL Server
       services.AddScoped<IRestaurantData, SqlRestaurantData>();
 
+      // Ask users to accept cookies
+      services.Configure<CookiePolicyOptions>(options =>
+      {
+        // This lambda determiens whether the user consent for non-essential cookies is needed for a given request
+        options.CheckConsentNeeded = context => true;
+        options.MinimumSameSitePolicy = SameSiteMode.None;
+      });
+
       services.AddRazorPages();
       services.AddControllers();
     }
