@@ -6,7 +6,7 @@
     "datatables.net": "^1.11.3",
     "datatables.net-bs4": "^1.11.3",
     "jquery": "^3.6.0",
-    "jquery-validation": "^1.19.3",
+    "jquery-validation": "^1.19.5",
     "jquery-validation-unobtrusive": "^3.2.12"
   }
 }
